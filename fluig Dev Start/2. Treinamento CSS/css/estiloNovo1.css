@@ -1,0 +1,49 @@
+/* Comentário em CSS */
+
+/* INICIO - Formatações dos arquivos LAYOUT UM */
+
+#geral{
+	width: 990px; /*Tamanho Monitores (Tela): 1024px X 768px | Barra de Rolagem conta na largura (24px)*/;
+	margin:10px auto; /*10px em cima e em baixo; o auto vêm de automático, ou seja, o próprio browser irá encontrar o centro da área*/
+}
+
+#topo{
+	width:100%; /*Formato: porcentagem*/;
+	height: 80px;
+	background: red;
+}
+
+#principal{
+	width:700px;
+	padding: 10px; /*padding: distância da borda do elemento para dentro dele mesmo, seria a borda interna de espaçamento do meu texto, imagem, ...*/;
+	float:left;
+	background:green; 
+}
+
+#principal p{ /*aplicado apenas a fonte pertecente a principal, fontes sem serifa (são os pequenos traços e prolongamentos que ocorrem no fim das hastes das letras) são indicadas e comumente utilizadas em ambiente Web.*/
+	font:20px Verdana;
+	color:white;
+}
+
+#apoio{
+	width: 270px; /*Cálculo: 700px + 270px = 970 (falta 20px, 20px é os 10px de cada lado do padding)*/;
+	float: left;
+	background: blue;
+}
+
+#apoio img{ /* referenciar ou endereçar a imagem de dentro de apoio! */
+	padding: 10px;
+	width: 250px;
+	height:170px;
+}
+
+#rodape{
+	width: 100%;
+	clear: both; /*Utilizasse clear para manter o rodapé isento do float e impedir de flutuar até o elemento mais próximo.*/ 
+	background: yellow;
+	height: 30px;
+}
+
+
+
+/* FIM - Formatações dos arquivos LAYOUT UM */

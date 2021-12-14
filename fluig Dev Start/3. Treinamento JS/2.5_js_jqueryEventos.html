@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery: Eventos</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){ /*Leia o Documento*/
+		$("p").on({
+			mouseenter: function(){ /*Mouse em cima do elemento*/
+				$(this).css("background-color", "lightgray");
+			},
+			mouseleave: function(){ /*Mouse deixa a área do elemento*/
+				$(this).css("background-color", "lightblue");
+			},
+			click: function(){ /*Mouse clica sobre o elemento*/
+				$(this).css("background-color", "yellow");
+			}
+		});	
+	});	
+
+	</script>
+</head>
+<body>
+
+<p>
+	$ (this).hide() - hides the current element. <br />
+
+	$("p").hide() - hides all p elements. <br />
+
+	$(".test").hide() - hides all elements with class="test" <br/>
+
+	$("#test").hiden() - hides the element with id="test".</p>
+
+</body>
+</html>
